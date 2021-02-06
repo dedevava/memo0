@@ -1,0 +1,42 @@
+
+
+<none>を殺す。
+docker rmi $(docker images -f 'dangling=true' -q) -f
+
+docker ログイン 
+docker-compose  exec サービス名 sh
+
+laravel dockerのコマンド
+
+composer create-project --prefer-dist laravel/laravel 
+laravel起動コマンド
+php artisan serve --host=0.0.0.0 --port=8000
+
+reactを入れる。
+composer create-project --prefer-dist laravel/laravel laravel_react
+cd laravel_react
+composer require laravel/ui
+php artisan ui react --auth
+npm install && npm run dev
+
+react 変更時
+npm run watct
+
+node アップデート
+curl -sL https://deb.nodesource.com/setup_14.x |  bash -
+
+npm を入れるコマンド
+apt-get update
+apt-get install nodejs
+apt-get install npm
+
+
+laravelのdatabase/migrateフォルダにマイグレ-ションファイルを作っておく。
+mysql --user=root --password=password
+CREATE DATABASE test1 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci
+
+create database test;
+
+マイグレーション作るかな。
+
+php artisan migrate 
